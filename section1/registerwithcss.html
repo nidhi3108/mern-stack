@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <!-- <link rel="stylesheet" href="registrationstyle.css"> -->
+
+<link href="https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+
+    <style>
+        *{
+            font-family: kanit;
+        }
+        /* .flex{
+            display: flex;
+            justify-content: space-between;
+        } */
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           min-height: 100vh;
+           background-image: /*linear-gradient(0deg, rgba(163, 217, 223, 0.54), rgba(237, 79, 172, 0.655)),*/url("https://tse2.mm.bing.net/th?id=OIP.QcNIWaTBM9_S9sT8FXrLHQHaEK&pid=Api&P=0");
+           background-size: cover;
+           /* backdrop-filter: blur(16px); */
+           /* background-color: #8EC5FC; */
+            /* background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+
+        }
+        .btn{
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex{
+            margin-top: 10px;
+            /* padding: 10px; */
+        }
+        label{
+            font-size: 20px;
+            /* text-shadow: 2px 2px 1px rgb(144, 87, 219); */
+        }
+        .myinput{
+            height: 36px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 1.1rem;
+            border-bottom: 2px solid rgb(4, 14, 14);
+            border: none;
+            margin-top: 5px;
+            text-shadow: 3px 3px 2px rgb(87, 219, 210);
+            border-radius: 5px;
+            box-shadow: 2px 2px 3px 2px rgba(92, 95, 171, 0.742);
+        }
+        .mycard{
+
+            border: 2px solid rgb(3, 4, 4);
+            width:30%;
+            padding: 30px;
+            background: rgb(254, 255, 255);
+            /* top right botom left */
+            /* margin: 100px 400px 100px 400px; */
+            box-shadow: 4px 4px 6px 3px rgb(63, 66, 157);
+        }
+        .mybtn{
+            background-color: rgb(10, 210, 245);
+            padding: 10px 20px;
+            color:white;
+            font-size: 1.1em;
+            font-weight: 600;
+            width: 45%;
+            /* x-offset y-offset blur size color */
+            box-shadow: 4px 4px 6px 3px rgb(81, 38, 93);
+        }
+        h2{
+            font-size: 35px;
+            margin-top: 5x;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="mycard">
+    <form class="form" action="">
+        <h2  >Register here to continue</h2>
+        <label>Full Name</label>
+        <input class="myinput"  type="text" placeholder="Enter Your Name">
+        <label>Email</label>
+        <input class="myinput"  type="text" placeholder="Enter Your  secure email">
+        <label>Contact No</label>
+        <input class="myinput"  type="text" placeholder="+91">
+        <div class="flex">
+            <label>Date of Birth</label>
+            <input class="input" type="date" placeholder="Enter Your date of birth">
+            <br>
+            <label>Gender</label>
+            <input type= "radio" name="male" value="Male">
+            <label for="">Male</label>
+            <input type= "radio" name="male" value="Male">
+            <label for="">Female</label>
+        </div>
+        <label>City</label>
+        <input  class="myinput" placeholder="Enter your city" list="city">
+        <datalist id="city">
+            <option>Lucknow</option>
+            <option>Mahmudabad</option>
+            <option>Gujrat</option>
+            <option>Amethi</option>
+        </datalist>
+        <label>Password</label>
+        <input  class="myinput" type="password" placeholder="Enter Your password">
+        <br>
+        <br>
+        <div class="btn">
+        <button class="mybtn">Register Now</button>
+        <button class="mybtn">Login Now</button>
+    </div>
+    </form>
+</div>
+</body>
+</html>

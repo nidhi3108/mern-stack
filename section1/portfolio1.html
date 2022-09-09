@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="portfolio.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+        <!-- ------------------navbar--------------- -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2 fst-italic ms-3 me-4 text-white" href="#">Navbar</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto fs-3 fst-italic">
+              <li class="nav-item ms-3 me-4 ">
+                <a class="nav-link active text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item ms-3 me-4">
+                <a class="nav-link text-white" href="#">Features</a>
+              </li>
+              <li class="nav-item ms-3 me-4">
+                <a class="nav-link text-white" href="#">Pricing</a>
+              </li>
+              <li class="nav-item ms-3 me-4">
+                <a class="nav-link text-white" href="#"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+<!-- ------------home--------------- -->
+
+      <div class="container">
+      <div class="row">
+        <div class="col-md-6 mt-5 pe-5 text-danger content1">
+          <h1>Full Stack Developer</h1>
+          <h2>Hi, I am Nidhi Verma </h2>
+          <h2> From India</h2>
+        </div>
+        <div class="col-md-6 mt-5 ps-5">
+          <img src="nidhipic1.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- ----------------About-------------- -->
+
+    <div class="container2">
+      <div class="row1">
+        <div class="col-md-6 mt-5 pe-5 about1">
+          <img class="img" src="nidhishort.jpeg" alt="">
+          </div>
+        <div class="col-md-6 mt-5 ps-5 about2">
+           <h1>About Me</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis consequuntur</p><p>nulla impedit at, nisi iste praesentium earum incidunt reiciendis aperiam saepe. In officia doloremque eum esse maxime deserunt eius.</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi expedita aliquid harum vel quis distinctio quasi debitis, a quisquam</p> <p>dolorem, eum ut. Nisi, repellendus optio. Suscipit amet ad mollitia?</p>
+             <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+              <div class="container-fluid">
+                <nav aria-label="breadcrumb nav2">
+                  <ol class="breadcrumb">
+                    <li class=" pe-3 ">
+                      <a class=" text-white tablinks active-link" onclick="opentab('skills')" href="#">Skills</a>
+                    </li>
+                    <li class="ms-3 pe-3">
+                      <a class=" text-white tablinks" onclick="opentab('experience')" href="#">Experience</a>
+                    </li>
+                     <li class="ms-3 pe-3">
+                      <a class=" text-white tablinks" onclick="opentab('education')" href="#">Education</a>
+                    </li>
+                  </ol>
+              </div>
+            </nav>
+             <div class="tabcontents active-tab" id="skills">
+              <ul>
+                <li><span>Full Stack Developer</span><br>Design Website </br></li>
+                <li><span>C++ Programmer</span><br>Programming for problem solving</br></li>
+              </ul>
+             </div>
+             <div class="tabcontents" id="Experience">
+              <ul>
+                <li><span>Recruitment Intern</span><br>Work in Letsgrowmore company as an recruitment intern</br></li>
+                <li><span>web developer Intern</span><br>Design website's frontend in AIST organization</br></li>
+              </ul>
+             </div>
+             <div class="tabcontents" id="Education">
+              <ul>
+                <li><span>Bachelor Degree</span><br>From-RR Institute Of Modern Technology<br>2019-2023<br>Current Cgpa-8.6</li>
+                <li><span>Senior Secondary</span><br>From- Sita Inter College<br>2017-2018<br>Scored-84%</li>
+                <li><span>Secondary</span><br>From-Ram Janki Bal Vidya Inter College<br>2015-2016<br>Scored-91%</li>
+              </ul>
+             </div>
+
+        </div>
+      </div>
+    </div>
+
+
+   <!-- ----------my project------------- -->
+  <div id="experience">
+          
+  </div>
+
+
+
+
+
+
+    <!-- MDB -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"> -->
+      <script>
+      var tablinks=document.getElementsByClassName("tablinks");
+      var tabcontents =document.getElementsByClassName("tabcontents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementsById(tabname).classList.add("active-tab");
+    }
+    </script>
+</body>
+
+</html>

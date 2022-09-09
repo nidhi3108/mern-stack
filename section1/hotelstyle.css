@@ -1,0 +1,57 @@
+*{
+    font-family: josefin sans;
+    font-size: 20px;
+    /* color: rgb(37, 202, 235); */
+}
+
+body{
+    /* margin: 50px 400px 50px 400px; */
+    padding: 30px;
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.1SA-Mjiu6SMJyXxNzaZzTAHaEo&pid=Api&P=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: aquamarine; */
+}
+h3{
+    font-size: 30px;
+    color: rgb(37, 202, 235);
+}
+h1{
+    text-align:center ;
+    font-size: 40px;
+    color: rgb(37, 202, 235);
+}
+.form{
+    border: 2px solid rgb(242, 242, 242);
+    border-radius: 10px;
+    /* width: 30%; */
+    padding:10px;
+    color: rgb(240, 244, 245);
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-height: 100vh;
+}
+.box1,.box2,.box3,.box4,.box5,.box6,.box7{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.box8{
+    margin: 30px;
+}
+.input{
+    width: 30%;
+    height: 40px;
+}
+.myinput{
+    width:15%;
+    height: 30px;
+}
+button{
+    border-radius: 10px;
+    background-color: rgba(76, 242, 242, 0.777);
+}

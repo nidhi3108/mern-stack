@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Internal Css</title>
+    <style>
+        h1{
+            /* shorthand properties */
+            text-decoration: wavy underline red;
+            color:blue;
+            font-size: 50px;
+        }
+        .myclass{
+             font-size:30px;
+             font-weight: 600;
+        }
+        #myid{
+            border: 3px solid rgb(95, 236, 14);
+            font-size: 30px;
+        }
+        p{
+            border: 3px solid rgb(236, 14, 214) !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Internal css is used to style multiple tag at once</h1>
+    <h1>Style tag is used to apply internal css</h1>
+    <p class="myclass">Class selectors are to select element by their class name</p>
+    <p id="myid"> ID Selector are used to uniquely identify elements </p>
+     priority tag-inline>id>tag
+</body>
+</html>
