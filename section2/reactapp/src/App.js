@@ -12,6 +12,7 @@ import Product from './components/Product';
 import UserManager from './components/UserManager';
 import { Toaster } from 'react-hot-toast';
 
+
 function App() {
   return (
     <div>
@@ -26,7 +27,7 @@ function App() {
         <Route element={<EventHandling/>} path="/eventhandling"/>
         <Route element={<Home></Home>} path="/"/>
         <Route element={<Home></Home>} path="home"/>
-        <Route element={<Login/>} path="login"/>
+        {/* <Route element={<Login/>} path="login"//> */}
         <Route element={<UserManager/>} path="UserManager"/>
         <Route element={<Notfound/>} path="*"/>
         <Route element={<Todo/>} path="todo"/>
